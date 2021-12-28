@@ -5,7 +5,7 @@ from pprint import pprint
 
 
 def process_file(file_description):
-    result = {'file' : file_description['path']}
+    result = {'file' : str(file_description['path'])}
     
     if not os.path.isfile(file_description['path']):
         result['state'] = 'missing'
